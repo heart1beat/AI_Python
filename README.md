@@ -19,3 +19,24 @@
 對於每個樣本，模型都會傳回一個包含 logits 或 log-odds 分數的向量，每個類別一個。
 
 ![image](https://github.com/heart1beat/AI_Python/blob/main/predictions.jpg)
+
+tf.nn.softmax 函數將這些 logits 轉換為每個類別的機率：
+
+![image](https://github.com/heart1beat/AI_Python/blob/main/softmax.jpg)
+
+使用 losses.SparseCategoricalCrossentropy 為訓練定義損失函數，它會接受 logits 向量和 True 索引，並為每個樣本傳回一個標量損失。
+
+![image](https://github.com/heart1beat/AI_Python/blob/main/define_loss_fn.jpg)
+
+此損失等於 true 類別的負對數機率：如果模型確定類別正確，則損失為零。
+
+這個未經訓練的模型給出的機率接近隨機（每個類別為 1/10），因此初始損失應該接近 -tf.math.log(1/10) ~= 2.3。
+
+![image](https://github.com/heart1beat/AI_Python/blob/main/calculate_loss_fn.jpg)
+
+在開始訓練之前，使用 Keras Model.compile 配置和編譯模型。 
+將 optimizer 類別設為 adam，將 loss 設定為您先前定義的 loss_fn 函數，並透過將 metrics 參數設為 accuracy 來指定要為模型評估的指標。
+
+![image](https://github.com/heart1beat/AI_Python/blob/main/model_compile.jpg)
+
+
