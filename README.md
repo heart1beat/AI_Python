@@ -15,3 +15,7 @@
 透過堆疊層來建構 tf.keras.Sequential 模型。
 
 ![image](https://github.com/heart1beat/AI_Python/blob/main/model.jpg)
+
+對於每個樣本，模型都會傳回一個包含 logits 或 log-odds 分數的向量，每個類別一個。
+
+![image](https://github.com/heart1beat/AI_Python/blob/main/predictions.jpg)
