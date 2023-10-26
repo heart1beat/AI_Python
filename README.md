@@ -59,3 +59,11 @@ Model.evaluate 方法通常在 "Validation-set" 或 "Test-set" 上檢查模型�
 
 ## 參考文章:
 https://tensorflow.google.cn/tutorials/quickstart/beginner?hl=zh_cn
+
+mnist = tf.keras.datasets.mnist
+
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+x_train, x_test = x_train / 255.0, x_test / 255.0
+     
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
+11490434/11490434 [==============================] - 0s 0us/step
