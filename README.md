@@ -60,6 +60,7 @@ Model.evaluate 方法通常在 "Validation-set" 或 "Test-set" 上檢查模型�
 ## 參考文章:
 https://tensorflow.google.cn/tutorials/quickstart/beginner?hl=zh_cn
 
+```python
 mnist = tf.keras.datasets.mnist
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
