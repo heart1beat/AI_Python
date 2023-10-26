@@ -4,7 +4,7 @@
 
 ##  將 TensorFlow 導入到程式碼
 
-import tensorflow as tf
+![image](https://github.com/heart1beat/AI_Python/blob/main/import_tensorflow.jpg)
 
 ## 加載Minist數據集
 
