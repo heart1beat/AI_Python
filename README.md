@@ -144,7 +144,3 @@ array([[3.1357499e-07, 1.7557096e-09, 1.3425333e-06, 3.1300344e-05,
 
 ## 參考文章:
 https://tensorflow.google.cn/tutorials/quickstart/beginner?hl=zh_cn
-x_train, x_test = x_train / 255.0, x_test / 255.0
-     
-Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
-11490434/11490434 [==============================] - 0s 0us/step
