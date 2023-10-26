@@ -56,3 +56,6 @@ Model.evaluate 方法通常在 "Validation-set" 或 "Test-set" 上檢查模型�
 ![image](https://github.com/heart1beat/AI_Python/blob/main/create_probability_model.jpg)
 
 ![image](https://github.com/heart1beat/AI_Python/blob/main/use_probability_model.jpg)
+
+## 參考文章:
+https://tensorflow.google.cn/tutorials/quickstart/beginner?hl=zh_cn
