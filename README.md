@@ -1,2 +1,2 @@
-# AI_Python
+# 南華大學跨領域學程-人工智慧期中報告
 用TensorFlow建構的神經網路：MNIST數字辨識模型
