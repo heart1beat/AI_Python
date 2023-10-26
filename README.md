@@ -39,4 +39,20 @@ tf.nn.softmax 函數將這些 logits 轉換為每個類別的機率：
 
 ![image](https://github.com/heart1beat/AI_Python/blob/main/model_compile.jpg)
 
+## 訓練並評估模型
 
+使用 Model.fit 方法調整您的模型參數並最小化損失：
+
+![image](https://github.com/heart1beat/AI_Python/blob/main/model_fit.jpg)
+
+Model.evaluate 方法通常在 "Validation-set" 或 "Test-set" 上檢查模型效能。
+
+![image](https://github.com/heart1beat/AI_Python/blob/main/model_evaluate.jpg)
+
+現在，這個照片分類器的準確度已經達到 98%。
+
+如果您想讓模型返回機率，可以封裝經過訓練的模型，並將 softmax 附加到該模型：
+
+![image](https://github.com/heart1beat/AI_Python/blob/main/create_probability_model.jpg)
+
+![image](https://github.com/heart1beat/AI_Python/blob/main/use_probability_model.jpg)
